@@ -1,0 +1,76 @@
+.form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > form {
+    width: 100%;
+    height: 50%;
+    max-width: 400px;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 4rem;
+    background-color: $color2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+
+    p {
+      background-color: rgb(222, 204, 204);
+      color: red;
+      padding: 0.5rem 2rem;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    > ul {
+      list-style-type: none;
+      > li {
+        background-color: rgb(222, 204, 204);
+        color: red;
+        padding: 0.5rem 2rem;
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
+
+    > input {
+      width: 100%;
+      padding: 1rem;
+      outline: none;
+      border: none;
+      background-color: $color1;
+      font-size: 1.8rem;
+      border-radius: 3px;
+      // outline: 1px solid $color4;
+      &:focus {
+        outline: 2px solid $color4; /* Change the color and width as needed */
+        outline-offset: 2px;
+      }
+    }
+
+    > button {
+      padding: 1rem 1rem;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      cursor: pointer;
+      background-color: $color4;
+      color: white;
+      font-size: 1.8rem;
+
+      &:disabled {
+        background-color: $color3;
+        cursor: not-allowed;
+      }
+
+      // &.submitting {
+      //   background-color: $color3;
+      //   cursor: not-allowed;
+      // }
+    }
+  }
+}

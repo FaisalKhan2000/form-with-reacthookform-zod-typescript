@@ -1,0 +1,39 @@
+$color1: #fafafa;
+$color2: #e8f1f5;
+$color3: #005691;
+$color4: #004a7c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+  font-family: monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $color3;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1367px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@import "form";
+
+// button:disabled {
+//   background-color: #6c757d;
+//   cursor: not-allowed;
+// }
+
+/* Additional style for the submitting state */
